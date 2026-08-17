@@ -61,6 +61,18 @@ export const AsyncPromptInjector: Plugin = async (ctx, options?: AsyncPromptInje
 
   return {
     /**
+     * Self-register the /inject_prompt command so the plugin is fully
+     * self-contained — no manual command file needed after install.
+     */
+    config: async (cfg) => {
+      cfg.command = cfg.command ?? {}
+      cfg.command.inject_prompt = {
+        description: 'Inject a prompt asynchronously for the agent to read during thinking',
+        template: '$ARGUMENTS',
+      }
+    },
+
+    /**
      * Intercept the `/inject_prompt` slash command. Keep the user's text
      * visible on screen, append an invisible marker so the agent can
      * recognize the message as command-injected, and queue the text for
