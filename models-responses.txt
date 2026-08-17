@@ -1,0 +1,36 @@
+Say yo!
+12:58 AM
+Thought: 260ms
+The user said "Say yo!" - this is a simple conversational request with no execution needed. According to the execution paths, purely informational questions with no execution required don't need approval. This is a conversational path.
+
+Let me respond simply with "yo!" as requested.
+yo!
+
+---
+
+  Say yo!
+  ┃  1:10 AM
+  ┃
+
+     Thought: 1.7s
+
+     The user said "Say yo!" - this was an injected prompt. Let me just respond naturally. But the user also asked me to read docs in ../OC_SORT.
+      Let me look at the docs directory.
+
+     Yo! Let me check out the docs in OC_SORT.
+
+ ---
+
+  Say yo!
+  ┃  1:06 AM
+
+     Thought: 424ms
+
+     The user said "Say yo!" - this is a simple conversational request. I should respond with "yo!" in a natural way. This doesn't require any
+     tool usage or context loading since it's just a conversational response.
+
+     However, I notice there's an injected prompt that says "Say yo!" - this seems to be from the system. Let me just respond naturally.
+
+     yo!
+
+     ==>> (here the agents stops) <<==
