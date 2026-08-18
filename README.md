@@ -22,11 +22,7 @@ That’s it.
 
 ## 📦 Installation
 
-```bash
-npm install opencode-async-prompt-injector
-```
-
-Then add it to your [opencode.json](https://opencode.ai/docs/config/):
+Add it to your [opencode.json](https://opencode.ai/docs/config/):
 
 ```json
 {
