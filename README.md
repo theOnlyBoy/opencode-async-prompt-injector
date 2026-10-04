@@ -1,4 +1,11 @@
-# ⚡ OpenCode Async Prompt Injector
+# ⚡ OpenCode (v1/v2) Async Prompt Injector
+
+<p>
+  <a href="https://www.npmjs.com/package/opencode-async-prompt-injector"><img alt="npm version" src="https://img.shields.io/npm/v/opencode-async-prompt-injector?color=blue"></a>
+  <img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-green">
+  <img alt="OpenCode v1 + v2" src="https://img.shields.io/badge/OpenCode-v1%20%7C%20v2-111">
+  <img alt="node" src="https://img.shields.io/badge/node-%E2%89%A5%2022-brightgreen">
+</p>
 
 **Slide a sticky note under your agent's nose while it's busy thinking.**
 
@@ -22,12 +29,14 @@ That’s it.
 
 ## 📦 Installation
 
-Add it to your [opencode.json](https://opencode.ai/docs/config/):
+Add it to your [opencode.json](https://opencode.ai/docs/config/) — **v1 and v2 both** load this package:
 
-```json
-{
-  "plugin": ["opencode-async-prompt-injector"]
-}
+```jsonc
+// OpenCode v1
+{ "plugin": ["opencode-async-prompt-injector"] }
+
+// OpenCode v2
+{ "plugins": [{ "package": "opencode-async-prompt-injector/v2" }] }
 ```
 
 Restart OpenCode.

@@ -1,15 +1,15 @@
 {
   "name": "opencode-async-prompt-injector",
-  "version": "1.0.0",
-	"description": "Slide a sticky note under your OpenCode agent's nose while it's busy thinking. Mid-task. No interruption.",
-	"keywords": [
-		"opencode",
-		"plugin",
-		"ai",
-		"agent",
-		"prompt",
-		"inject",
-		"async"
+  "version": "1.1.0",
+  "description": "Slide a sticky note under your OpenCode agent's nose while it's busy thinking. Mid-task. No interruption.",
+  "keywords": [
+    "opencode",
+    "plugin",
+    "ai",
+    "agent",
+    "prompt",
+    "inject",
+    "async"
   ],
   "homepage": "https://github.com/theOnlyBoy/opencode-async-prompt-injector",
   "bugs": {
@@ -22,10 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theOnlyBoy/opencode-async-prompt-injector.git"
+    "url": "git+https://github.com/theOnlyBoy/opencode-async-prompt-injector.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "type": "module",
   "sideEffects": false,
@@ -35,6 +36,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./v2": {
+      "types": "./dist/v2.d.ts",
+      "import": "./dist/v2.js"
     }
   },
   "publishConfig": {
@@ -51,10 +56,11 @@
     "@opencode-ai/plugin": "^1.18.18"
   },
   "devDependencies": {
+    "@types/node": "^26.6.4",
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
-		"typescript": "^6.0.3"
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": ">= 22"

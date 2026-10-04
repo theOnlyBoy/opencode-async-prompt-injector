@@ -12,6 +12,9 @@ importers:
         specifier: ^1.18.18
         version: 1.18.18
     devDependencies:
+      '@types/node':
+        specifier: ^26.6.4
+        version: 26.6.4
       oxfmt:
         specifier: ^0.63.0
         version: 0.63.0
@@ -339,6 +342,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@types/node@26.6.4':
+    resolution: {integrity: sha512-ldVPDCzj7fsaGZrLB0NuHuTvJcsNasysBAqMolr/cgxrLd1xbqxIr3XJiPnHHJUCxj5sNF1vnRj9aWnrVh5Jcg==}
+
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -441,6 +447,9 @@ packages:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@8.9.0:
+    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
   uuid@14.0.1:
     resolution: {integrity: sha512-6ZxzVpzDXDa3bJWaHilVayA+BH/1zmxCJoVgvmqJnid/gPoKHxUrS/aC/T6LGQtNHT+XHG9fXPJB4d+IrU30Ew==}
@@ -628,6 +637,10 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
+  '@types/node@26.6.4':
+    dependencies:
+      undici-types: 8.9.0
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -758,6 +771,8 @@ snapshots:
   toml@4.3.0: {}
 
   typescript@6.0.3: {}
+
+  undici-types@8.9.0: {}
 
   uuid@14.0.1: {}
 
