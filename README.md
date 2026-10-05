@@ -36,7 +36,7 @@ Add it to your [opencode.json](https://opencode.ai/docs/config/) — **v1 and v2
 { "plugin": ["opencode-async-prompt-injector"] }
 
 // OpenCode v2
-{ "plugins": [{ "package": "opencode-async-prompt-injector/v2" }] }
+{ "plugins": ["opencode-async-prompt-injector"] }
 ```
 
 Restart OpenCode.

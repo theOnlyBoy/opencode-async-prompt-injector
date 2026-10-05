@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+- Fixed a bug in v2 plugin registration.
+
 ## 1.1.0
 
 - **OpenCode v2 support.** One package, both runtimes — install the same way and use the same

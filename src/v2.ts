@@ -1,10 +1,11 @@
 /**
  * OpenCode v2 support for the Async Prompt Injector.
  *
- * v1 and v2 need different default exports: v1 loads a plugin **function** (`(ctx, options) => hooks`),
- * while v2 requires a plain **object** (`{ id, setup(ctx) }`) — a callable object is rejected at load
- * time. So the package exposes two entrypoints: the unchanged v1 function in
- * `src/async-prompt-injector.ts` (`main` / `.`) and the v2 object in this file (`./v2`).
+ * v1 and v2 load different shapes from ONE package, per the official v2 migration guide (“Support V1
+ * and V2 from one package”): the root default export is an object that carries both implementations —
+ * v1 calls `server(input, options)` (the unchanged function in `async-prompt-injector.ts`) and v2
+ * calls `setup(ctx)` (this file). A callable-object default is not used; the object simply has both
+ * keys. v1 object entrypoints require OpenCode >= 1.18.29.
  *
  * On v2 the plugin registers `/inject_prompt` via `ctx.command.transform((editor) => editor.add(…))`
  * (`CommandEditor` exposes only `add`; the user's text arrives as `input.prompt.text`) and forwards it

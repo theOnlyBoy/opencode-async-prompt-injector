@@ -1,6 +1,6 @@
 {
   "name": "opencode-async-prompt-injector",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Slide a sticky note under your OpenCode agent's nose while it's busy thinking. Mid-task. No interruption.",
   "keywords": [
     "opencode",
@@ -25,6 +25,7 @@
     "url": "git+https://github.com/theOnlyBoy/opencode-async-prompt-injector.git"
   },
   "files": [
+    "index.js",
     "dist",
     "CHANGELOG.md"
   ],
@@ -36,10 +37,6 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
-    },
-    "./v2": {
-      "types": "./dist/v2.d.ts",
-      "import": "./dist/v2.js"
     }
   },
   "publishConfig": {
